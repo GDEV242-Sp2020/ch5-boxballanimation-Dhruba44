@@ -84,7 +84,7 @@ public class BouncingBall
         // check if it has hit the ground
         if(yPosition >= (groundPosition - diameter) && ySpeed > 0) {
             yPosition = (int)(groundPosition - diameter);
-            ySpeed = -ySpeed + ballDegradation; 
+            ySpeed = ballDegradation -ySpeed; 
         }
 
         // draw again at new position
